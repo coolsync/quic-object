@@ -12,6 +12,6 @@ def login():
         print("modify password ok")
         login()
     else:
-        print('error password')
+        print('failed')
         login()
 login()

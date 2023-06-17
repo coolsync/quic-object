@@ -24,6 +24,7 @@ import random
 
 
 def roll_points(times=3, points=None):
+    print('<<< roll dice >>>')
     if points is None:
         points = []
     while True:
@@ -40,15 +41,18 @@ def roll_results(total):
     isSmall = 1 <= total <= 10
     isBig = 11 <= total <= 18
 
-    if isBig:
-        return "Big"
-    else:
-        return "Small"
+    # if isBig:
+    #     return "Big"
+    # else:
+    #     return "Small"
+    
+    return "Big" if isBig else "Small"
+    
+
 
 
 def start_game():
     print("<<<  Game Start  >>>")
-    # 1.
     choices = ["Big", "Small"]
     points = roll_points()
     your_choice = input("Big or Small: \n")
@@ -79,32 +83,34 @@ def roll_results2(total):
 
 
 def play():
-    origin_money = 1000
+    origin_number = 1000
     while True:
-        rest_money = 0
-        you_bet = int(input("you bet: "))
-        # rest_money = origin_money - you_bet
-        points = roll_points()
-        choices = ["Big", "Small"]
+        # rest_number = 0
+        you_come = int(input("you come: "))
+        rest_number = origin_number - you_come # 投了票之后， 还剩多少 500
+        points = roll_points() # 总共的点数
+        choices = ["Big", "Small"] # 可供选择枚举
         your_choice = input("Big or Small: \n")
         if your_choice in choices:
-            you_win = your_choice == roll_results(sum(points))
-            if you_win:
+            you_resualt = your_choice == roll_results(sum(points))
+            if you_resualt: # True or False
                 print(f"your points: {points}, you win")
-                rest_money = you_bet + origin_money
-                print(f"you gaind {you_bet}, you now have {rest_money}")
+                rest_number = origin_number + you_come
+                # rest_number = rest_number + you_come + rest_number
+                print(f"you gaind {you_come}, you now have {rest_number}")
             else:
                 print(f"your points: {points}, you lose")
-                rest_money = origin_money - you_bet
-                print(f"you lose {you_bet}, you now have {rest_money}")
+                rest_number = origin_number - you_come
+                print(f"you failed {you_come}, you now have {rest_number}")
 
-            if rest_money == 0:
-                print("you lose done, play end")
+            if rest_number == 0:
+                print("you failed")
                 break
         else:
             print("invilad words")
-            play()
-
+            # play()
+            continue
+        origin_number = rest_number
 
 play()
 #####

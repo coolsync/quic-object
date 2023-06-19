@@ -2,9 +2,17 @@ fruit = ['apple', 'oragin']
 fruit.insert(1, 'lanpa')    # add a element
 print(fruit)
 
+<<<<<<< HEAD
+num_list = [3, 2, 1, 4, 5, 7, 1, 1]
+print(sorted(num_list, reverse=True))
+=======
+>>>>>>> temp
+
 num_list = [3, 2, 1, 4, 5, 7, 1, 1]
 print(sorted(num_list, reverse=True))
 
+# Return a new list containing all items from the iterable in ascending order.
+# A custom key function can be supplied to customize the sort order, and the reverse flag can be set to request the result in descending order.
 num = ['1', '2', '3']
 addr = ['g', 'p', 'c']
 for a, b in zip(num, addr): print(f'{a} is {b}')

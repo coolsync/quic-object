@@ -3,7 +3,7 @@ fruit.insert(1, 'lanpa')    # add a element
 print(fruit)
 
 num_list = [3, 2, 1, 4, 5, 7, 1, 1]
-print(sorted(num_list))
+print(sorted(num_list, reverse=True))
 
 num = ['1', '2', '3']
 addr = ['g', 'p', 'c']
@@ -21,6 +21,7 @@ b = [n for n in range(1, 20000000)]
 print(f'cost time: {time.clock_gettime(time.CLOCK_MONOTONIC) - t0}')
 
 
+# list
 a = [i**2 for i in range(1, 6)]
 b = [j*2 for j in range(1, 6)]
 c = [j for j in range(1, 6) if j % 2 == 0]

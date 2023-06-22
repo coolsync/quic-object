@@ -13,7 +13,6 @@ with open('./t.txt', 'r') as fp:
 #   strip
 # 去除一个word list 中重复word
 # 将word与之对应的次数形成map
-
 # 按照word map中value, 即出现的次数降序sd
 
 import string

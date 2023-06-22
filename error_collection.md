@@ -20,3 +20,6 @@ example:
 
 ((x, y, z) for z in integers() for y in range(1, z) for x in range(1, y) if x*x + y*y == z*z)
 ```
+# ValueError: not enough values to unpack (expected 2, got 1)
+# python list only print value, can't print index
+                        

@@ -2,11 +2,8 @@ fruit = ['apple', 'oragin']
 fruit.insert(1, 'lanpa')    # add a element
 print(fruit)
 
-<<<<<<< HEAD
 num_list = [3, 2, 1, 4, 5, 7, 1, 1]
 print(sorted(num_list, reverse=True))
-=======
->>>>>>> temp
 
 num_list = [3, 2, 1, 4, 5, 7, 1, 1]
 print(sorted(num_list, reverse=True))

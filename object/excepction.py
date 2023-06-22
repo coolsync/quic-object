@@ -1,20 +1,20 @@
 import sys
 # import parse_cvs
-# import io
-# import os
-# def main():
-#     filename = sys.argv[1]
-#     try:
-#         with open(filename, 'r') as fp:
-#             for line in fp.readlines():
-#                 print(line)
-#             fp.close()
-#         # pass
-#     except IOError:
-#         print('the file is 不存在', filename, os.EX_IOERR)
-#         os._exit(1)
+import io
+import os
+def main():
+    filename = sys.argv[1]
+    try:
+        with open(filename, 'r') as fp:
+            for line in fp.readlines():
+                print(line)
+            fp.close()
+        # pass
+    except IOError:
+        print('the file is 不存在', filename, sys.stderr)
+        sys.exit(1)
 
-# main()
+main()
 
 try:
     print("a")

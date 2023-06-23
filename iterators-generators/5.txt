@@ -1,0 +1,10 @@
+
+
+
+
+def readlines(filenames):
+for f in filenames:
+for line in open(f):
+yield line
+
+def grep(pattern, lines):

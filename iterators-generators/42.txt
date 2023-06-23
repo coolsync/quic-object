@@ -1,0 +1,1 @@
+# 目标dirctory: /home/fun-coding/sshimport osdef findfiles():filepaths = os.listdir('/home/fun-coding/')for filepath in filepaths:abs_path = '/home/fun-coding/' + filepath# print(abs_path)if os.path.isdir(abs_path) and abs_path == "/home/fun-coding/ssh":# pass# print(abs_path)

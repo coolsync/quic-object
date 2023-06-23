@@ -1,0 +1,10 @@
+i = 0
+for v in li:
+yield (i, v)
+i += 1
+
+my_enumerate(['a', 'b', 'c'])
+print(list(my_enumerate(['a', 'b', 'c'])))
+
+for i in my_enumerate(['a', 'b','c']):
+print(i)

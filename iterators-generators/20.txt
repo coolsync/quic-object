@@ -1,0 +1,10 @@
+yield os.path.abspath(file)
+
+def read_lines(f):
+result = []
+for line in open(f):
+result.append(line)
+return result
+
+
+n = 0

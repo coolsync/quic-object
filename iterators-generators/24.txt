@@ -1,0 +1,10 @@
+
+filter('body', ['./a.txt', './b.txt'])
+
+
+a = (x*x for x in range(10))
+
+a = ((x, y, z) for x in range(10) for y in range(10) for z in range(10) if x*x + y*y == z*z)
+print(len(list(a)))
+
+def take(n, seq):

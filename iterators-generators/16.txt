@@ -1,0 +1,10 @@
+import os
+def findfiles(target):
+for (root, dirs, files) in os.walk(target):
+for file in files:
+filename = os.path.join(root, file)
+if filename.endswith('.py'):
+yield filename
+
+
+filepath = os.path.abspath('./')    # apply system absolute path

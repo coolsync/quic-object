@@ -1,0 +1,10 @@
+pass
+
+return resualt
+
+print(take(5, squres()))
+
+
+import os
+def opendir(dir):
+for (root, dirs, files) in os.walk(dir):

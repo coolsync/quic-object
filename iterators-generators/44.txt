@@ -1,0 +1,1 @@
+# findfiles()# root, dirs, filesroot = '/home/fun-coding/ssh'def fildfiles(root):filepaths = os.listdir(root)for filepath in filepaths:# print(filepath)if os.path.isfile(os.path.join(root, filepath)):# print(filepath)

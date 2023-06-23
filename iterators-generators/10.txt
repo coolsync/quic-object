@@ -1,0 +1,10 @@
+else:
+raise StopIteration()
+
+
+y = yrange(5)
+
+
+
+class zrange:
+def __init__(self, n) -> None:

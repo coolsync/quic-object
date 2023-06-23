@@ -1,0 +1,10 @@
+yield i * i
+
+def take(n, seq):
+seq = iter(seq)
+
+resualt = []
+try: # extend
+for i in range(n):
+resualt.append(next(seq))
+except StopIteration:

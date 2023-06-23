@@ -1,0 +1,10 @@
+y = yrange(5)
+print(next(y))
+print(list(y))
+print(list(y))
+
+
+class yrange:
+def __init__(self, n) -> None:
+self.i = 0
+self.n = n

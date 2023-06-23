@@ -1,0 +1,10 @@
+seq = iter(seq)
+result = []
+try:
+for i in range(n):
+result.append(next(seq))
+except StopIteration:
+pass
+
+return result
+

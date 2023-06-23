@@ -1,3 +1,10 @@
-aaaaa
-bbb
-cccc
+for line in open(file):
+result.append(line)
+return result
+
+n = 0
+for file in find_file('./'):
+n += len(read_lines(file))
+
+print(n)
+

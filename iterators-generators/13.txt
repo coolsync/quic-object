@@ -1,0 +1,10 @@
+
+z = zrange(5)
+print(list(z))
+print(list(z))
+
+def yrange(n):
+i = 0
+while i < n:
+yield i
+i += 1

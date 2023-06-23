@@ -1,10 +1,10 @@
 
 
-
-
-
-
-def cat(filenames):
+def filter(pat, filenames):
 for f in filenames:
 for line in open(f):
+if len(line) > 40:
 print(line, end="")
+
+
+

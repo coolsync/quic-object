@@ -1,1 +1,0 @@
-n += 1with open(os.path.join('./', f'{n}.txt'), 'w') as f:for line in result[i:i+10]:f.write(line)main()# while True:# for i in range(0, len(a), 3):#     n += 1

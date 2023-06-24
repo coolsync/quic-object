@@ -1,1 +1,0 @@
-for file in findfiles('/home/fun-coding/ssh'):print(file)# Problem 10: Implement a function izip that works like itertools.izip.# for x, y in itertools.izip(["a", "b", "c"], [1, 2, 3]):#     print(x, y)# a 1# b 2# c 3

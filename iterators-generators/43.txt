@@ -1,1 +1,0 @@
-in_filepath = os.listdir(abs_path)print(in_filepath)for filename in in_filepath:# print(filename)if os.path.isfile("/home/fun-coding/ssh/" + filename):print(filename)# print(filepath)

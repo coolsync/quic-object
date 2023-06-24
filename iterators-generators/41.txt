@@ -1,1 +1,0 @@
-# 问题3：编写一个函数findfiles，该函数递归地降低指定目录的目录树，并生成树中所有文件的路径。# 列出目录下所有的目录和文件# 遍历目录所有文件# 获取dirctory and file absolute path# 判断文件类型# 如果是指定的dirctory, 将其中所有文件的路径放到一个list中# print files list

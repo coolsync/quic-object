@@ -1,1 +1,0 @@
-n = 0;for x in a:yield(x, b[n])n += 1print(list(izip(["a", "b", "c"], [1, 2, 3])))for x, y in izip(["a", "b", "c"], [1, 2, 3]):print(x, y)

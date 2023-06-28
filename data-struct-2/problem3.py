@@ -1,3 +1,15 @@
+# Problem 3: What happens when the above sum function is called with a list of strings? 
+# Can you make your sum function work for a list of strings as well.
+# 3. 实现String之间的相加 
+def sum(str_list):
+    # result = ''
+    # for i in str_list:
+        # result += i
+    # return result
+    return ''.join(str_list) 
+# print(sum(["hello", "world"]))
+
+
 # 1: Write a function lensort to sort a list of strings based on length.
 # lensort(['python', 'perl', 'java', 'c', 'haskell', 'ruby'])
 # ['c', 'perl', 'java', 'ruby', 'python', 'haskell']

@@ -6,6 +6,15 @@ def filter(pat, filenames):
         for line in open(f):
             if len(line) > 40:
                 print(line, end="") 
+# List tui dao shi
+def filter(pat, filenames):
+    # result =[]
+    # for f in filenames:
+    #     for line in open(f):
+    #         if len(line) > 40:
+    #             print(line, end="")
+    lines = [line for f in filenames for line in open(f) if len(line) > 40 and 'body' in line]
+    print(lines)
 
 # def grep(pattern, lines):
     # return [line for line in lines if len(pattern) > 40]

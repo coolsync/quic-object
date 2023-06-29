@@ -5,8 +5,10 @@ Write a function cumulative_sum to compute cumulative sum of a list.
 Does your implementation work for a list of strings?
 """
 
-
-# cumulative sum of [a, b, c, ...] 正如 [a, a+b, a+b+c, ...]
+def cumulative_sum(num_list):
+    pass
+        
+# cumulative sum of [a, b, c, ...] as [a, a+b, a+b+c, ...]
 # [1, 2, 3]
 # [1, 1+2, 1+2+3]
 # n = len(list)

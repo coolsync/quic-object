@@ -29,11 +29,14 @@ def special_line():
     n = int(sys.argv[2][1])
     filename = './' + sys.argv[3]
     lines = open(filename).readlines()
-    line_len = len(lines)
+    ln = len(lines)
 
-    if command == 'head':
-        for i in range(n):
-            print(lines[i])
+    for i in range(n):
+        if command == 'head':
+            print(lines[i].strip())
+        elif command == 'tail':
+            print(lines[ln-i-1].strip())
+         
     
 special_line()
 
